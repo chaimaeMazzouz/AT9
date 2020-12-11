@@ -32,5 +32,15 @@ namespace AT9
         {
             Changer_Form(new Ajout_Compte());
         }
+
+        private void modificationCompteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Modification_Compte());
+        }
+
+        private void suppressionCompteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Suppression_Compte());
+        }
     }
 }

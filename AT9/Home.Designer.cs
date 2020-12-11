@@ -41,9 +41,9 @@
             this.suppressionClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opérationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mouvementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.virementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajoutMouvementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suppressionMouvementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.virementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajoutVirementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suppressionVirementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -57,7 +57,7 @@
             this.opérationsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(805, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -91,12 +91,14 @@
             this.modificationCompteToolStripMenuItem.Name = "modificationCompteToolStripMenuItem";
             this.modificationCompteToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.modificationCompteToolStripMenuItem.Text = "Modification Compte";
+            this.modificationCompteToolStripMenuItem.Click += new System.EventHandler(this.modificationCompteToolStripMenuItem_Click);
             // 
             // suppressionCompteToolStripMenuItem
             // 
             this.suppressionCompteToolStripMenuItem.Name = "suppressionCompteToolStripMenuItem";
             this.suppressionCompteToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.suppressionCompteToolStripMenuItem.Text = "Suppression Compte";
+            this.suppressionCompteToolStripMenuItem.Click += new System.EventHandler(this.suppressionCompteToolStripMenuItem_Click);
             // 
             // clientsToolStripMenuItem
             // 
@@ -112,25 +114,25 @@
             // navugationToolStripMenuItem
             // 
             this.navugationToolStripMenuItem.Name = "navugationToolStripMenuItem";
-            this.navugationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.navugationToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.navugationToolStripMenuItem.Text = "Navugation";
             // 
             // ajoutClientToolStripMenuItem
             // 
             this.ajoutClientToolStripMenuItem.Name = "ajoutClientToolStripMenuItem";
-            this.ajoutClientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajoutClientToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.ajoutClientToolStripMenuItem.Text = "Ajout Client";
             // 
             // modificationClientToolStripMenuItem
             // 
             this.modificationClientToolStripMenuItem.Name = "modificationClientToolStripMenuItem";
-            this.modificationClientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificationClientToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.modificationClientToolStripMenuItem.Text = "Modification Client";
             // 
             // suppressionClientToolStripMenuItem
             // 
             this.suppressionClientToolStripMenuItem.Name = "suppressionClientToolStripMenuItem";
-            this.suppressionClientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.suppressionClientToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.suppressionClientToolStripMenuItem.Text = "Suppression Client";
             // 
             // opérationsToolStripMenuItem
@@ -148,17 +150,8 @@
             this.ajoutMouvementToolStripMenuItem,
             this.suppressionMouvementToolStripMenuItem});
             this.mouvementToolStripMenuItem.Name = "mouvementToolStripMenuItem";
-            this.mouvementToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mouvementToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.mouvementToolStripMenuItem.Text = "Mouvements";
-            // 
-            // virementsToolStripMenuItem
-            // 
-            this.virementsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ajoutVirementToolStripMenuItem,
-            this.suppressionVirementToolStripMenuItem});
-            this.virementsToolStripMenuItem.Name = "virementsToolStripMenuItem";
-            this.virementsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.virementsToolStripMenuItem.Text = "Virements";
             // 
             // ajoutMouvementToolStripMenuItem
             // 
@@ -171,6 +164,15 @@
             this.suppressionMouvementToolStripMenuItem.Name = "suppressionMouvementToolStripMenuItem";
             this.suppressionMouvementToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.suppressionMouvementToolStripMenuItem.Text = "Suppression Mouvement";
+            // 
+            // virementsToolStripMenuItem
+            // 
+            this.virementsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ajoutVirementToolStripMenuItem,
+            this.suppressionVirementToolStripMenuItem});
+            this.virementsToolStripMenuItem.Name = "virementsToolStripMenuItem";
+            this.virementsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.virementsToolStripMenuItem.Text = "Virements";
             // 
             // ajoutVirementToolStripMenuItem
             // 
@@ -188,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(805, 495);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;

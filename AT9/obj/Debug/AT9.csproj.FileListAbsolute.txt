@@ -10,3 +10,5 @@ C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.csproj
 C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.exe
 C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.pdb
 C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Ajout_Compte.resources
+C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Modification_Compte.resources
+C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Suppression_Compte.resources
