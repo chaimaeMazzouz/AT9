@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajout _Mouvement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajout _Mouvement.Designer.cs">
+      <DependentUpon>Ajout _Mouvement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ajout_Client.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     <Compile Include="Suppression_Compte.Designer.cs">
       <DependentUpon>Suppression_Compte.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ajout _Mouvement.resx">
+      <DependentUpon>Ajout _Mouvement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ajout_Client.resx">
       <DependentUpon>Ajout_Client.cs</DependentUpon>
     </EmbeddedResource>

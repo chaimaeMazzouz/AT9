@@ -154,7 +154,7 @@
             this.ajoutMouvementToolStripMenuItem,
             this.suppressionMouvementToolStripMenuItem});
             this.mouvementToolStripMenuItem.Name = "mouvementToolStripMenuItem";
-            this.mouvementToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.mouvementToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mouvementToolStripMenuItem.Text = "Mouvements";
             // 
             // ajoutMouvementToolStripMenuItem
@@ -162,6 +162,7 @@
             this.ajoutMouvementToolStripMenuItem.Name = "ajoutMouvementToolStripMenuItem";
             this.ajoutMouvementToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.ajoutMouvementToolStripMenuItem.Text = "Ajout Mouvement";
+            this.ajoutMouvementToolStripMenuItem.Click += new System.EventHandler(this.ajoutMouvementToolStripMenuItem_Click);
             // 
             // suppressionMouvementToolStripMenuItem
             // 

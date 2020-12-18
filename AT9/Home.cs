@@ -62,5 +62,10 @@ namespace AT9
         {
             Changer_Form(new Suppression_Client());
         }
+
+        private void ajoutMouvementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Ajout__Mouvement());
+        }
     }
 }
