@@ -42,5 +42,15 @@ namespace AT9
         {
             Changer_Form(new Suppression_Compte());
         }
+
+        private void navugationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Recherche_Clients());
+        }
+
+        private void ajoutClientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Ajout_Client());
+        }
     }
 }

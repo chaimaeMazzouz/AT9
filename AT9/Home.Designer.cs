@@ -114,25 +114,27 @@
             // navugationToolStripMenuItem
             // 
             this.navugationToolStripMenuItem.Name = "navugationToolStripMenuItem";
-            this.navugationToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.navugationToolStripMenuItem.Text = "Navugation";
+            this.navugationToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.navugationToolStripMenuItem.Text = "Recherche Comptes Client";
+            this.navugationToolStripMenuItem.Click += new System.EventHandler(this.navugationToolStripMenuItem_Click);
             // 
             // ajoutClientToolStripMenuItem
             // 
             this.ajoutClientToolStripMenuItem.Name = "ajoutClientToolStripMenuItem";
-            this.ajoutClientToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.ajoutClientToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.ajoutClientToolStripMenuItem.Text = "Ajout Client";
+            this.ajoutClientToolStripMenuItem.Click += new System.EventHandler(this.ajoutClientToolStripMenuItem_Click);
             // 
             // modificationClientToolStripMenuItem
             // 
             this.modificationClientToolStripMenuItem.Name = "modificationClientToolStripMenuItem";
-            this.modificationClientToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.modificationClientToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.modificationClientToolStripMenuItem.Text = "Modification Client";
             // 
             // suppressionClientToolStripMenuItem
             // 
             this.suppressionClientToolStripMenuItem.Name = "suppressionClientToolStripMenuItem";
-            this.suppressionClientToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.suppressionClientToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.suppressionClientToolStripMenuItem.Text = "Suppression Client";
             // 
             // opérationsToolStripMenuItem
