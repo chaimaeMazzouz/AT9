@@ -14,3 +14,4 @@ C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Modifi
 C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Suppression_Compte.resources
 C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Recherche_Clients.resources
 C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Ajout_Client.resources
+C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Modification_Client.resources

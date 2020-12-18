@@ -52,5 +52,10 @@ namespace AT9
         {
             Changer_Form(new Ajout_Client());
         }
+
+        private void modificationClientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Modification_Client());
+        }
     }
 }

@@ -65,6 +65,12 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modification_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification_Client.Designer.cs">
+      <DependentUpon>Modification_Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modification_Compte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification_Client.resx">
+      <DependentUpon>Modification_Client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modification_Compte.resx">
       <DependentUpon>Modification_Compte.cs</DependentUpon>
