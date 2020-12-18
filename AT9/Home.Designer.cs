@@ -137,6 +137,7 @@
             this.suppressionClientToolStripMenuItem.Name = "suppressionClientToolStripMenuItem";
             this.suppressionClientToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.suppressionClientToolStripMenuItem.Text = "Suppression Client";
+            this.suppressionClientToolStripMenuItem.Click += new System.EventHandler(this.suppressionClientToolStripMenuItem_Click);
             // 
             // opérationsToolStripMenuItem
             // 

@@ -91,6 +91,12 @@
     <Compile Include="Recherche_Clients.Designer.cs">
       <DependentUpon>Recherche_Clients.cs</DependentUpon>
     </Compile>
+    <Compile Include="Suppression_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppression_Client.Designer.cs">
+      <DependentUpon>Suppression_Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="Suppression_Compte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="Recherche_Clients.resx">
       <DependentUpon>Recherche_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppression_Client.resx">
+      <DependentUpon>Suppression_Client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Suppression_Compte.resx">
       <DependentUpon>Suppression_Compte.cs</DependentUpon>
