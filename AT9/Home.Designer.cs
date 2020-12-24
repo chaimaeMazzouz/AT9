@@ -169,6 +169,7 @@
             this.suppressionMouvementToolStripMenuItem.Name = "suppressionMouvementToolStripMenuItem";
             this.suppressionMouvementToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.suppressionMouvementToolStripMenuItem.Text = "Suppression Mouvement";
+            this.suppressionMouvementToolStripMenuItem.Click += new System.EventHandler(this.suppressionMouvementToolStripMenuItem_Click);
             // 
             // virementsToolStripMenuItem
             // 
@@ -176,7 +177,7 @@
             this.ajoutVirementToolStripMenuItem,
             this.suppressionVirementToolStripMenuItem});
             this.virementsToolStripMenuItem.Name = "virementsToolStripMenuItem";
-            this.virementsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.virementsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.virementsToolStripMenuItem.Text = "Virements";
             // 
             // ajoutVirementToolStripMenuItem

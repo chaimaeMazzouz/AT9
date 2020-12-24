@@ -109,6 +109,12 @@
     <Compile Include="Suppression_Compte.Designer.cs">
       <DependentUpon>Suppression_Compte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Suppression_Mouvement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppression_Mouvement.Designer.cs">
+      <DependentUpon>Suppression_Mouvement.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Ajout _Mouvement.resx">
       <DependentUpon>Ajout _Mouvement.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Suppression_Compte.resx">
       <DependentUpon>Suppression_Compte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppression_Mouvement.resx">
+      <DependentUpon>Suppression_Mouvement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

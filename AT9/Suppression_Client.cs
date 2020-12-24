@@ -54,6 +54,7 @@ namespace AT9
 
         private void btnSupprimerClient_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Dv_Courant[0].Delete();

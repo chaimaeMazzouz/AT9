@@ -17,3 +17,4 @@ C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Ajout_
 C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Modification_Client.resources
 C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Suppression_Client.resources
 C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Ajout__Mouvement.resources
+C:\Users\MZ\Desktop\my stuff\Desktop-Client-Serveur\AT9\AT9\obj\Debug\AT9.Suppression_Mouvement.resources

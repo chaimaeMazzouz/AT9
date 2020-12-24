@@ -87,7 +87,7 @@ namespace AT9
         private void btnEnregistrerQuiter_Click(object sender, EventArgs e)
         {
             try
-            {
+            {            
                 SqlCommandBuilder blBanque = new SqlCommandBuilder(Adp_Banque);
                 SqlCommandBuilder blBanque1 = new SqlCommandBuilder(Adp_Banque1);
                 Adp_Banque.Update(Ds_Banque, "MesMouvements");
