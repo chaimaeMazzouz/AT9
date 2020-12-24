@@ -56,6 +56,8 @@ namespace AT9
                 Dv_Mvts = new DataView(Ds_Banque.Tables["MesMouvements"], "Num_Mouvement =" + combo_Num_Mouvement.SelectedValue, "",
                DataViewRowState.CurrentRows);
                 textSolde.Text = Dv_Comptes[0].Row["Solde"].ToString();
+             
+                textSolde.Text = Dv_Comptes[Convert.ToInt32(Dv_Mvts[0].Row["Num_Compte"])].Row["Solde"].ToString();
             }
             catch (Exception ex)
             {
