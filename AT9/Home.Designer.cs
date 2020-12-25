@@ -185,6 +185,7 @@
             this.ajoutVirementToolStripMenuItem.Name = "ajoutVirementToolStripMenuItem";
             this.ajoutVirementToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.ajoutVirementToolStripMenuItem.Text = "Ajout Virement";
+            this.ajoutVirementToolStripMenuItem.Click += new System.EventHandler(this.ajoutVirementToolStripMenuItem_Click);
             // 
             // suppressionVirementToolStripMenuItem
             // 

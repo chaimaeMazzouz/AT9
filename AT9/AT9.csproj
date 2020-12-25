@@ -64,6 +64,12 @@
     <Compile Include="Ajout_Compte.Designer.cs">
       <DependentUpon>Ajout_Compte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ajout_Virement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajout_Virement.Designer.cs">
+      <DependentUpon>Ajout_Virement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -115,6 +121,12 @@
     <Compile Include="Suppression_Mouvement.Designer.cs">
       <DependentUpon>Suppression_Mouvement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Suppression_Virement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppression_Virement.Designer.cs">
+      <DependentUpon>Suppression_Virement.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Ajout _Mouvement.resx">
       <DependentUpon>Ajout _Mouvement.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ajout_Compte.resx">
       <DependentUpon>Ajout_Compte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajout_Virement.resx">
+      <DependentUpon>Ajout_Virement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -156,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Suppression_Mouvement.resx">
       <DependentUpon>Suppression_Mouvement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppression_Virement.resx">
+      <DependentUpon>Suppression_Virement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
