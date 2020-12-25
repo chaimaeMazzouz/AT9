@@ -40,24 +40,31 @@ namespace AT9
                 MessageBox.Show(ex.Message);
             }
         }
-        
+        int i;
         private void combo_Num_Mouvement_SelectedIndexChanged(object sender, EventArgs e)
         {
             
             try
             {
-             
+              
                 Dv_Mvts = new DataView(Ds_Banque.Tables["MesMouvements"], "Num_Mouvement =" + combo_Num_Mouvement.SelectedValue, "",
                DataViewRowState.CurrentRows);
-                DataRelation dtRelation;
-                DataColumn MouvCol = Ds_Banque.Tables["MesMouvements"].Columns["Num_Compte"];
-                DataColumn CompCol = Ds_Banque.Tables["MesComptes"].Columns["Num_Compte"];
+                Dv_Comptes = new DataView(Ds_Banque.Tables["MesComptes"],"","Num_Compte", DataViewRowState.CurrentRows);
+                int numCompte = Convert.ToInt32(Dv_Mvts[combo_Num_Mouvement.SelectedIndex].Row["Num_Compte"]);
+                int index = Dv_Comptes.Find(numCompte);
 
-                dtRelation = new DataRelation("ComptMouveRelation", CompCol, MouvCol);
-                Ds_Banque.Tables["MesMouvements"].ParentRelations.Add(dtRelation);
+                 MessageBox.Show(""+numCompte);
+                //i = combo_Num_Mouvement.SelectedIndex;
+                //textSolde.Text = Dv_Comptes[index]["Solde"].ToString();
 
 
-                textSolde.Text = Dv_Comptes[combo_Num_Mouvement.SelectedIndex].Row["Solde"].ToString();
+
+                //DataRelation dtRelation;
+                //DataColumn MouvCol = Ds_Banque.Tables["MesMouvements"].Columns["Num_Compte"];
+                //DataColumn CompCol = Ds_Banque.Tables["MesComptes"].Columns["Num_Compte"];
+
+                //dtRelation = new DataRelation("ComptMouveRelation", CompCol, MouvCol);
+                //Ds_Banque.Tables["MesMouvements"].ParentRelations.Add(dtRelation);
 
             }
             catch (Exception ex)
