@@ -49,12 +49,15 @@ namespace AT9
              
                 Dv_Mvts = new DataView(Ds_Banque.Tables["MesMouvements"], "Num_Mouvement =" + combo_Num_Mouvement.SelectedValue, "",
                DataViewRowState.CurrentRows);
-                int i = combo_Num_Mouvement.SelectedIndex;
-                MessageBox.Show(Dv_Mvts[i].Row["Num_Compte"].ToString());
-                int nuCompte = Convert.ToInt32(Dv_Mvts[i].Row["Num_Compte"]);
-                Dv_Comptes = new DataView(Ds_Banque.Tables["MesComptes"], "Num_Compte =" + nuCompte, "",
-               DataViewRowState.CurrentRows);
-                textSolde.Text = Dv_Comptes[0].Row["Solde"].ToString();
+                DataRelation dtRelation;
+                DataColumn MouvCol = Ds_Banque.Tables["MesMouvements"].Columns["Num_Compte"];
+                DataColumn CompCol = Ds_Banque.Tables["MesComptes"].Columns["Num_Compte"];
+
+                dtRelation = new DataRelation("ComptMouveRelation", CompCol, MouvCol);
+                Ds_Banque.Tables["MesMouvements"].ParentRelations.Add(dtRelation);
+
+
+                textSolde.Text = Dv_Comptes[combo_Num_Mouvement.SelectedIndex].Row["Solde"].ToString();
 
             }
             catch (Exception ex)
