@@ -50,7 +50,7 @@ namespace AT9
                         DataRow ligne = Ds_Banque.Tables["MesMouvements"].NewRow();
                         
                         ligne[1] = combo_Num_Compte.Text;
-                        ligne[2] = textSolde.Text;
+                        ligne[2] = textMontantMouvement.Text;
                         ligne[4] = DateTime.Now;
                         Ds_Banque.Tables["MesMouvements"].Rows.Add(ligne);
                         if (radioRetrait.Checked)
@@ -73,6 +73,10 @@ namespace AT9
                         MessageBox.Show(ex.Message);
                     }
                 }
+            }
+            else
+            {
+                MessageBox.Show("remplir les champs!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
                
         }

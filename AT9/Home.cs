@@ -77,5 +77,11 @@ namespace AT9
         {
             Changer_Form(new Ajout_Virement());
         }
+
+        private void suppressionVirementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Suppression_Virement());
+
+        }
     }
 }

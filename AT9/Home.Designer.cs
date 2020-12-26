@@ -192,6 +192,7 @@
             this.suppressionVirementToolStripMenuItem.Name = "suppressionVirementToolStripMenuItem";
             this.suppressionVirementToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.suppressionVirementToolStripMenuItem.Text = "Suppression Virement";
+            this.suppressionVirementToolStripMenuItem.Click += new System.EventHandler(this.suppressionVirementToolStripMenuItem_Click);
             // 
             // Home
             // 

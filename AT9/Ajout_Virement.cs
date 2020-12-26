@@ -32,11 +32,13 @@ namespace AT9
 
                 combo_Num_Debiteur.DisplayMember = "Num_Compte";
                 combo_Num_Debiteur.ValueMember = "Num_Compte";
-                combo_Num_Debiteur.DataSource = Ds_Banque.Tables["MesComptes"];
+                DataTable dtDebiteur = Ds_Banque.Tables["MesComptes"].Copy();
+                combo_Num_Debiteur.DataSource = dtDebiteur;
 
                 comboCrediteur.DisplayMember = "Num_Compte";
                 comboCrediteur.ValueMember = "Num_Compte";
-                comboCrediteur.DataSource = Ds_Banque.Tables["MesComptes"];
+                DataTable dtCrediteur = Ds_Banque.Tables["MesComptes"].Copy();
+                comboCrediteur.DataSource = dtCrediteur;
             }
             catch (Exception ex)
             {
@@ -62,19 +64,20 @@ namespace AT9
                         DataRow ligne = Ds_Banque.Tables["MesVirements"].NewRow();
 
                         ligne[4] = DateTime.Now;
+                        ligne[3] = textMontantVirement.Text;
                         Ds_Banque.Tables["MesVirements"].Rows.Add(ligne); 
-
-                        Dv_Compte[0]["Solde"] = soldeDebiteur + Convert.ToDecimal(textMontantVirement.Text);
+                        Dv_Compte[0]["Solde"] = soldeDebiteur - Convert.ToDecimal(textMontantVirement.Text);
                         ligne[1] = combo_Num_Debiteur.Text;
+                        textSoldeDeb.Text = Dv_Compte[0]["Solde"].ToString();
+                        Dv_Compte = new DataView(Ds_Banque.Tables["MesComptes"], "Num_Compte =" + comboCrediteur.SelectedValue, "", DataViewRowState.CurrentRows);
 
-                        DataView dt = new DataView(Ds_Banque.Tables["MesComptes"]);
-                        dt.RowFilter = "Num_Compte = '" + comboCrediteur.SelectedValue + "'";
-                        Dv_Compte[0]["Solde"] = soldeCrediteur - Convert.ToDecimal(textMontantVirement.Text);
+                        soldeCrediteur = Convert.ToDecimal(Dv_Compte[0]["Solde"]);
+                        Dv_Compte[0]["Solde"] = soldeCrediteur + Convert.ToDecimal(textMontantVirement.Text);
                         ligne[2] = comboCrediteur.Text;
-
-                        textMontantVirement.Clear();
-                        combo_Num_Debiteur.SelectedIndex = 0;
-                        comboCrediteur.SelectedIndex = 0;
+                        textSoldeCrediteur.Text = Dv_Compte[0]["Solde"].ToString();
+                        //textMontantVirement.Clear();
+                        //combo_Num_Debiteur.SelectedIndex = 0;
+                        //comboCrediteur.SelectedIndex = 0;
                         MessageBox.Show("Ajout effectué");
                     }
                     catch (Exception ex)
@@ -83,6 +86,10 @@ namespace AT9
                         MessageBox.Show(ex.Message);
                     }
                 }
+            }
+            else
+            {
+                MessageBox.Show("remplir les champs!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -111,13 +118,16 @@ namespace AT9
             Dv_Compte = new DataView(Ds_Banque.Tables["MesComptes"], "Num_Compte =" + combo_Num_Debiteur.SelectedValue, "", DataViewRowState.CurrentRows);
 
             soldeDebiteur = Convert.ToDecimal(Dv_Compte[0]["Solde"]);
+            textSoldeDeb.Text = soldeDebiteur.ToString();
         }
 
+        
         private void comboCrediteur_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Dv_Compte = new DataView(Ds_Banque.Tables["MesComptes"], "Num_Compte =" + comboCrediteur.SelectedValue, "", DataViewRowState.CurrentRows);
+           DataView Dv_CompteCr = new DataView(Ds_Banque.Tables["MesComptes"], "Num_Compte =" + comboCrediteur.SelectedValue, "", DataViewRowState.CurrentRows);
 
-            soldeCrediteur = Convert.ToDecimal(Dv_Compte[0]["Solde"]);
+            soldeCrediteur = Convert.ToDecimal(Dv_CompteCr[0]["Solde"]);
+            textSoldeCrediteur.Text = soldeCrediteur.ToString();
         }
     }
 }

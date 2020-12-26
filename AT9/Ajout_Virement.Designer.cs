@@ -41,6 +41,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboCrediteur = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textSoldeDeb = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textSoldeCrediteur = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -93,7 +97,7 @@
             // 
             // textMontantVirement
             // 
-            this.textMontantVirement.Location = new System.Drawing.Point(385, 76);
+            this.textMontantVirement.Location = new System.Drawing.Point(538, 76);
             this.textMontantVirement.Name = "textMontantVirement";
             this.textMontantVirement.Size = new System.Drawing.Size(100, 20);
             this.textMontantVirement.TabIndex = 81;
@@ -101,7 +105,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(382, 58);
+            this.label4.Location = new System.Drawing.Point(535, 58);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 13);
             this.label4.TabIndex = 79;
@@ -111,7 +115,7 @@
             // 
             this.combo_Num_Debiteur.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_Num_Debiteur.FormattingEnabled = true;
-            this.combo_Num_Debiteur.Location = new System.Drawing.Point(54, 76);
+            this.combo_Num_Debiteur.Location = new System.Drawing.Point(12, 76);
             this.combo_Num_Debiteur.Name = "combo_Num_Debiteur";
             this.combo_Num_Debiteur.Size = new System.Drawing.Size(121, 21);
             this.combo_Num_Debiteur.TabIndex = 74;
@@ -152,7 +156,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(74, 55);
+            this.label3.Location = new System.Drawing.Point(32, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 73;
@@ -162,7 +166,7 @@
             // 
             this.comboCrediteur.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboCrediteur.FormattingEnabled = true;
-            this.comboCrediteur.Location = new System.Drawing.Point(218, 76);
+            this.comboCrediteur.Location = new System.Drawing.Point(278, 76);
             this.comboCrediteur.Name = "comboCrediteur";
             this.comboCrediteur.Size = new System.Drawing.Size(121, 21);
             this.comboCrediteur.TabIndex = 87;
@@ -171,17 +175,55 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(238, 55);
+            this.label2.Location = new System.Drawing.Point(298, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 86;
             this.label2.Text = "Num Crediteur";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(165, 55);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 13);
+            this.label7.TabIndex = 89;
+            this.label7.Text = "Solde Debiteur";
+            // 
+            // textSoldeDeb
+            // 
+            this.textSoldeDeb.Location = new System.Drawing.Point(152, 76);
+            this.textSoldeDeb.Name = "textSoldeDeb";
+            this.textSoldeDeb.ReadOnly = true;
+            this.textSoldeDeb.Size = new System.Drawing.Size(100, 20);
+            this.textSoldeDeb.TabIndex = 88;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(425, 55);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 13);
+            this.label8.TabIndex = 91;
+            this.label8.Text = "Solde Crediteur";
+            // 
+            // textSoldeCrediteur
+            // 
+            this.textSoldeCrediteur.Location = new System.Drawing.Point(414, 76);
+            this.textSoldeCrediteur.Name = "textSoldeCrediteur";
+            this.textSoldeCrediteur.ReadOnly = true;
+            this.textSoldeCrediteur.Size = new System.Drawing.Size(100, 20);
+            this.textSoldeCrediteur.TabIndex = 90;
             // 
             // Ajout_Virement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textSoldeCrediteur);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textSoldeDeb);
             this.Controls.Add(this.comboCrediteur);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
@@ -220,5 +262,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboCrediteur;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textSoldeDeb;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textSoldeCrediteur;
     }
 }

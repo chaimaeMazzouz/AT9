@@ -56,6 +56,10 @@ namespace AT9
                     MessageBox.Show(ex.Message);
                 }
             }
+            else
+            {
+                MessageBox.Show("remplir les champs!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnEnregistrerQuiter_Click(object sender, EventArgs e)
